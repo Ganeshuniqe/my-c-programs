@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int n,temp,revese =0,reminder;
+    printf("enter any number");
+    scanf("%d",&n);
+    temp=n;
+    while(n!=0)
+    {
+        reminder=n%10;
+        n=n/10;
+        revese=(revese*10)+reminder;
+    }
+    if(revese==temp)
+    {
+        printf("given number is palindrom number");
+    }
+    else
+    {
+       printf("given number is not palindrom number"); 
+    }
+    return 0;
+}
+
