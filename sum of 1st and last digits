@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int n,sum=0,fdigit,ldigit;
+    printf("enter any number:");
+    scanf("%d",&n);
+    ldigit=n%10;
+    while(n>=10)
+    {
+        n=n/10;
+    }
+    fdigit=n;
+   sum=fdigit+ldigit;
+   printf("sum of first and last digits of given number is: %d",sum);
+    return 0;
+}
+
